@@ -1,0 +1,31 @@
+#main-block {
+    position: fixed;
+    top: 30%;
+    left: 40%;
+}
+#outer{
+    position: relative;
+    border-radius: 15px;
+    height: 30px;
+    width: 60px;
+    border: 1px solid grey;
+    display: inline-block;
+    background-color: #30f34b;
+    transition: 1s all ease-in-out;
+}
+#inner{
+    position: absolute;
+    border-radius: 50%;
+    transition: 1s all ease-in-out;
+    height: 26px;
+    width: 26px;
+    margin-top: 3px;
+    margin-left: -60px;
+    background-color: grey;
+}
+#inner:target{
+    margin-left: -30px;
+}
+#outer:target{
+    background-color: whitesmoke;
+}
